@@ -1,4 +1,4 @@
-﻿namespace TesteApi.Entities
+﻿namespace Teste.Domain.Entities
 {
     public class User
     {
@@ -14,6 +14,7 @@
         public string Name { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
+
         //{
         //    "id": 1,
         //    "name": "Leanne Graham",
