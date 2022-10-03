@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Teste.Domain.Commands.Desenvolvedor;
 using Teste.Domain.Entities;
-using Teste.Domain.IRepository;
+using Teste.Domain.Repositories;
 using Teste.Shared.Entities;
 using Teste.Shared.Interfaces;
 

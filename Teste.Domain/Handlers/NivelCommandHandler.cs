@@ -1,6 +1,6 @@
 ﻿using Teste.Domain.Commands.Nivel;
 using Teste.Domain.Entities;
-using Teste.Domain.IRepository;
+using Teste.Domain.Repositories;
 using Teste.Shared.Entities;
 using Teste.Shared.Interfaces;
 

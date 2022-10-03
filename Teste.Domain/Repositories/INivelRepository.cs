@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Teste.Domain.Entities;
 
-namespace Teste.Domain.IRepository
+namespace Teste.Domain.Repositories
 {
     public interface INivelRepository
     {
