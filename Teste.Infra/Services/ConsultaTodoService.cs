@@ -32,7 +32,18 @@ namespace Teste.Infra.Services
         {
             string urlConsulta = "https://jsonplaceholder.typicode.com/todos";
 
-            throw new NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+
+            var resultado = httpClient.GetAsync(urlConsulta).Result;
+
+            if (resultado.IsSuccessStatusCode)
+            {
+                var todos = JsonConvert.DeserializeObject<IEnumerable<Todo>>(resultado.Content.ReadAsStringAsync().Result);
+
+                return todos;
+            }
+
+            throw new Exception();
         }
     }
 }

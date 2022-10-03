@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Teste.Domain.Entities;
+using Teste.Infra.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -38,6 +40,20 @@ namespace TesteApi.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [HttpGet("todo")]
+        public Todo GetTodo()
+        {
+            ConsultaTodoService todoService = new();
+            return todoService.RetornaTodo();
+        }
+
+        [HttpGet("todos")]
+        public IEnumerable<Todo> GetTodos()
+        {
+            ConsultaTodoService todoService = new();
+            return todoService.RetornaTodos();
         }
     }
 }
