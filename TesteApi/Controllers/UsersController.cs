@@ -42,18 +42,6 @@ namespace TesteApi.Controllers
         {
         }
 
-        [HttpGet("todo")]
-        public Todo GetTodo()
-        {
-            ConsultaTodoService todoService = new();
-            return todoService.RetornaTodo();
-        }
-
-        [HttpGet("todos")]
-        public IEnumerable<Todo> GetTodos()
-        {
-            ConsultaTodoService todoService = new();
-            return todoService.RetornaTodos();
-        }
+        
     }
 }
